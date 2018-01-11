@@ -8,13 +8,14 @@ $(document).ready(function() {
   if (height < 48 ) {
     $(".no-low-rest").show();
   } else if (height >=48 && height < 54) {
-    $(".short").show();
-  } else if (height >=54 && height < 77) {
-    $(".ride").show();
-  } else if (height >= 78) {
+    $(".must48").show();
+    $(".no-low-rest").show();
+  } else if (height >=54 && height < 78) {
+    $(".must48").show();
+    $(".must54").show();
+    $(".no-low-rest").show();
+  } else {
     $(".ride").show();
     $(".too-tall").hide();
-  } else {
-    $(".no-low-rest").show();
   }
 });
